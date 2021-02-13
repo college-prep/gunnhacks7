@@ -86,6 +86,7 @@ html, body {
 	width: 100vw;
 	/* margin: 0px -10px -10px -10px; */
 	padding-top: 36px;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 .banner{
 	width: 100vw;
@@ -308,4 +309,24 @@ a {
 	to{
 		filter: brightness(0.9);
 	}
+}
+.form{
+	display: block;
+}
+.text-fields{
+	display: inline-block;
+}
+.text-input{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+.submit{
+	display: block;
+	border: none;
+	cursor: pointer;
 }
