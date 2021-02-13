@@ -16,10 +16,9 @@ html{
 .navbar{
 	background-color: #e0e0e0;
 	margin: -10px;
-	display: relative;
 	padding: 8px 10px 10px 10px;
-	display: fixed;
-	
+	width: 100vw;
+	position: fixed!important;
 }
 #logo{
 	margin-left: 20px;
@@ -29,12 +28,13 @@ html{
 	margin: auto;
 	position: relative;
 	height: 20px!important;
+	margin-right: 40px;
 }
 .menu-item{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 18px;
 	text-decoration: none;
-	padding: 6px 12px 5px 12px; 
+	padding: 6px 12px 7px 12px; 
 	/*font-family: ___*/
 	color: #2F2FA2;
 	-webkit-transition: color 300ms;
@@ -67,4 +67,13 @@ html{
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 	border-radius: 5px!important;
+}
+/*Main Site*/
+.main-site{
+	width: 100%;
+	margin: 0px -10px;
+	padding-top: 28px;
+}
+.banner{
+	width: 100vw;
 }
