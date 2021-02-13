@@ -21,11 +21,6 @@
 			"title": "Explore",
             "icon": "fa-search",
 			"url": "/explore/"
-		},
-		{
-			"title": "Item 4",
-            "icon": "fa-flask",
-			"url": "/item4/"
 		}
 	];
 	let topnav = document.createElement("div");

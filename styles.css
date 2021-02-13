@@ -23,6 +23,9 @@ html, body {
 	z-index: 50;
 	display: inline-flex;
 	height: 36px;
+	box-shadow: 0px 4px 11px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0px 4px 11px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 4px 11px 0px rgba(0,0,0,0.75);
 }
 #logo {
 	margin: 0 auto 0 8px;
@@ -113,11 +116,9 @@ html, body {
 	box-shadow: 0px 4px 11px 0px rgba(0,0,0,0.75);
 	-webkit-box-shadow: 0px 4px 11px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 4px 11px 0px rgba(0,0,0,0.75);
-	padding-bottom: 1000px;
 }
 .section{
 	position: relative;
-	margin-bottom: 500px!important;
 }
 .info-text > p{
 	padding: 0px 40px;
@@ -132,11 +133,12 @@ html, body {
 }
 .info-text{
 	width: 100vw;
+	background-color: #e0e0e0;
 }
 .info-image{
 	width: 100vw;
 	max-height: 250px;
-	object-fit: none;
+	object-fit: cover;
 	background-color: black;
 }
 .info-left{
@@ -155,7 +157,6 @@ html, body {
 		max-height: 450px;
 	}
 	.info-text{
-		background-color: #e0e0e0;
 		width: 35vw;
 		height: 450px;
 		max-height: 450px;
@@ -291,6 +292,7 @@ a {
 	position: relative;
 	left: 0;
 	right: 0;
+	display: inline-block;
 }
 .button:hover{
 	animation-name: buttonHover;
