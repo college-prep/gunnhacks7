@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+		<link rel="manifest" href="/icons/site.webmanifest">
+		<link rel="shortcut icon" href="/icons/favicon.ico">
+		<meta name="msapplication-TileColor" content="#2b5797">
+		<meta name="msapplication-config" content="/icons/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+		<title>Thank You for Registering</title>
+		<style>
+			div {
+				animation-duration: 1s;
+				background-size: cover;
+				background-position: center;
+			}
+			@keyframes fade-in {
+				0%   {opacity:0}
+				100% {opacity:1}
+			}
+		</style>
+	</head>
+	<body>
+		<!-- <div class="navbar">
+			<img src="SOURCE.jpg" alt="Logo" id="logo"/>
+			<a class="menu-item" href="index.html">Home</a>
+			<a class="menu-item" href="https://www.google.com">Explore</a>
+			<a class="menu-item" href="https://www.google.com">Item 3</a>
+			<a class="menu-item" href="https://www.google.com">Item 4</a>
+			<!- - <div class = "menu-items"></div> - ->
+		</div> -->
+		
+		<!--Replace With Random Image-->
+		<div class = "background">
+			<img class="background-image" src="/register/space-background.jpg"/>
+		</div>
+		
+		<div class="wrapper wrapper-register">
+			<div class="centered-popout">
+				<center><h1>Your Submission Has Been Received</h1></center>
+				<center><p>You will now receive notifications on upcoming astronomical events!</p></center>
+			</div>
+		</div>
+		<script src="/main.js"></script>
+		<script>
+			const testDiv = document.querySelector('.wrapper .banner');
+        	if(!getCookie('homepage-image-url')) {
+				XHR.makeRequest("GET","https://enieg5flfilebgv.m.pipedream.net/images/get?image_id=homepage", function(r,s){
+					testDiv.style.backgroundImage = `url(${r})`;
+					setCookie('homepage-image-url', r, 0.5);
+					testDiv.style.animationName = 'fade-in';
+				}, 0)
+			} else {
+				testDiv.style.backgroundImage = `url(${getCookie('homepage-image-url')})`;
+				testDiv.style.animationName = 'fade-in';
+			}
+		</script>
+		<script src="/nav-menu.js"></script>
+	</body>
+</html>
