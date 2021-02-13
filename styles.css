@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
-
-/*
-#242582 - Dark Purple
-#553D67 - Purplish Grey
-#F64C72 - Pink
-#99738E - Light Purple
-#2F2FA2 - Purple
+/*Colors:
+#2C3531 - Dark Grey
+#116466 - Greenish
+#D9b08C - Pinkish
+#FFCB9A - Peach
+#D1E8E2 - Light Blue
 */
-
 html{
 	overflow-x: hidden;
 }
@@ -32,11 +30,12 @@ html{
 }
 .menu-item{
 	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bold;
 	font-size: 18px;
 	text-decoration: none;
 	padding: 6px 12px 7px 12px; 
 	/*font-family: ___*/
-	color: #2F2FA2;
+	color: #116466;
 	-webkit-transition: color 300ms;
 	transition: color 300ms;
 	position: relative;
@@ -48,7 +47,8 @@ html{
 }
 .menu-item:before{
     content: "";
-    position: absolute;z-index: -1;
+    position: absolute;
+	z-index: -1;
     top: 0;
     bottom: 0;
     left: 0;
@@ -71,9 +71,27 @@ html{
 /*Main Site*/
 .main-site{
 	width: 100%;
-	margin: 0px -10px;
+	margin: 0px -10px -10px -10px;
 	padding-top: 28px;
 }
 .banner{
 	width: 100vw;
+	height: calc(100vh - 28px);
+	background-image: url(https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg);
+	position: fixed;
+}
+.title{
+	position: relative;
+	display: block;
+	text-shadow: 2px 4px 5px #000000;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align:center;
+	white-space: pre;
+	content:"Star Seeker";
+	font-size: 80px;
+	color: white;
+	position: absolute;
+	left: 20%;
+	right: 20%;
+	transform: translateY(40vh);
 }
