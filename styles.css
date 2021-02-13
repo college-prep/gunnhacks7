@@ -137,6 +137,7 @@ html, body {
 	width: 100vw;
 	max-height: 250px;
 	object-fit: none;
+	background-color: black;
 }
 .info-left{
 	float: left;
