@@ -9,11 +9,10 @@
 html, body {
 	margin: 0;
 	overflow-x: hidden;
-	background-color: black;
 }
 /*navigation*/
 
-.navbar {
+.navbar{
 	background-color: #e0e0e0;
 	/* margin: -10px; */
 	/* padding: 8px 10px 10px 10px; */
@@ -63,19 +62,19 @@ html, body {
     left: 0;
     right: 0;
 	background: #aaa;
-    -webkit-transform: scaleY(0);
-    transform: scaleY(0);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
     -webkit-transform-origin: 50%;
     transform-origin: 50%;
     -webkit-transition-property: transform;
     transition-property: transform;
     -webkit-transition: 300ms ease-out;
     transition: 300ms ease-out;
-	border-radius: 5px;
 }
-.menu-item:hover:before {
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
+.menu-item:hover:before{
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+	border-radius: 5px!important;
 }
 /*Main Site*/
 .wrapper {
@@ -83,25 +82,27 @@ html, body {
 	/* margin: 0px -10px -10px -10px; */
 	padding-top: 36px;
 }
-.banner {
+.banner{
 	width: 100vw;
 	height: calc(100vh - 28px);
-	background-color: #000;
+	background-image: url(https://cdn.pocket-lint.com/r/s/1200x/assets/images/142413-apps-feature-art-and-science-collide-the-best-in-modern-space-art-image1-iha6vzu3wk.jpg);
+	background-repeat:none;
+	background-size: 100vw;
 	position: fixed;
 }
-.title {
+.title{
+	position: relative;
 	display: block;
-	text-shadow: 3px 4px 6px #000000;
+	text-shadow: 2px 4px 5px #000000;
 	font-family: 'Source Sans Pro', sans-serif;
 	text-align:center;
-	width: 100%;
-	white-space: nowrap;
-	content: "Star Seeker";
-	font-size: 16vmin;
-	font-weight: 900;
+	white-space: pre;
+	content:"Star Seeker";
+	font-size: 50px;
 	color: white;
 	position: absolute;
-	margin: auto;
+	left: 0%;
+	right: 0%;
 	transform: translateY(40vh);
 }
 .content {
@@ -112,13 +113,50 @@ html, body {
 	box-shadow: 0px 4px 11px 0px rgba(0,0,0,0.75);
 	-webkit-box-shadow: 0px 4px 11px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 4px 11px 0px rgba(0,0,0,0.75);
+	padding-bottom: 1000px;
+}
+.section{
+	position: relative;
+	margin-bottom: 500px!important;
+}
+.info-text > p{
+	padding: 0px 40px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
 	
-	padding-bottom: 500px;
+}
+.info-text > h1{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 42px;
+	text-align:center;
+}
+.info-text{
+	width: 100vw;
+}
+.info-image{
+	width: 100vw;
+	max-height: 250px;
+}
+.info-left{
+	float: left;
+}
+.info-right{
+	float: right;
 }
 @media only screen and (min-width: 600px){
+	.title{
+		font-size: 80px;
+	}
 	.info-image{
-		width: 70vw;
-		height: 700px;
+		width: 65vw;
+		height: 450px;
+		max-height: 450px;
+	}
+	.info-text{
+		background-color: #e0e0e0;
+		width: 35vw;
+		height: 450px;
+		max-height: 450px;
 	}
 }
 a {
