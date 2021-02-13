@@ -285,6 +285,23 @@ a {
 	background-color: #D9b08C;
 	color: black;
 	text-align:center;
-	padding: 10px;
-	border-radius: 5px;
+	padding: 10px 15px;
+	border-radius: 8px;
+	font-size: 18px;
+	position: relative;
+	left: 0;
+	right: 0;
+}
+.button:hover{
+	animation-name: buttonHover;
+	animation-duration: .4s;
+	animation-fill-mode: forwards;
+}
+@keyframes buttonHover{
+	from{
+		filter: brightness(1);
+	}
+	to{
+		filter: brightness(0.9);
+	}
 }

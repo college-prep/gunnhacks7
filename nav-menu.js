@@ -6,8 +6,8 @@
 			"url": "/"
 		},
 		{
-			"title": "Info",
-			"url": "/info/",
+			"title": "Events",
+			"url": "/events/",
             "icon": "fa-flask"
 			/*"subpages": [
 				{
