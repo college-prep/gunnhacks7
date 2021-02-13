@@ -281,3 +281,10 @@ a {
 	z-index: 100;
 	transition: opacity 0.5s;
 }
+.button{
+	background-color: #D9b08C;
+	color: black;
+	text-align:center;
+	padding: 10px;
+	border-radius: 5px;
+}
