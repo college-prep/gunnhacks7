@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+/*
+#242582 - Dark Purple
+#553D67 - Purplish Grey
+#F64C72 - Pink
+#99738E - Light Purple
+#2F2FA2 - Purple
+*/
+
+html{
+	overflow-x: hidden;
+}
+/*navigation*/
+
+.navbar{
+	background-color: #e0e0e0;
+	margin: -10px;
+	display: relative;
+	padding: 8px 10px 10px 10px;
+	display: fixed;
+	
+}
+#logo{
+	margin-left: 20px;
+}
+.menu-items{
+	float: right;
+	margin: auto;
+	position: relative;
+	height: 20px!important;
+}
+.menu-item{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	text-decoration: none;
+	padding: 6px 12px 5px 12px; 
+	/*font-family: ___*/
+	color: #2F2FA2;
+	-webkit-transition: color 300ms;
+	transition: color 300ms;
+	position: relative;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+}
+.menu-item:before{
+    content: "";
+    position: absolute;z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	background: #aaa;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition: 300ms ease-out;
+    transition: 300ms ease-out;
+}
+.menu-item:hover:before{
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+	border-radius: 5px!important;
+}
