@@ -21,7 +21,17 @@ function getCookie(cname) {
 	}
 	return "";
 }
+//For Each with output
+Array.prototype.repeatEach = NodeList.prototype.repeatEach = HTMLCollection.prototype.repeatEach = function(fn) {
+	var outputs = [];
+	if (!(fn && typeof fn == 'function')) throw new TypeError(fn + ' is not a function');
+	for(var i = 0; i < this.length; i++) {
+		outputs.push( fn(this[i]) );
+	}
+	return outputs;
+}
 
+//Faster Requests
 var XHR = {
 	makeRequest: function(method, url, callback, proxy, data) {
 		proxy = proxy || 0;

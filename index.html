@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<style>
 			div {
 				animation-duration: 1s;
@@ -14,17 +15,16 @@
 		</style>
 	</head>
 	<body>
-		<div class="navbar">
+		<!-- <div class="navbar">
 			<img src="SOURCE.jpg" alt="Logo" id="logo"/>
-			<div class = "menu-items">
-				<a class="menu-item" href="index.html">Home</a>
-				<a class="menu-item" href="https://www.google.com">Explore</a>
-				<a class="menu-item" href="https://www.google.com">Item 3</a>
-				<a class="menu-item" href="https://www.google.com">Item 4</a>
-			</div>
-		</div>
+			<a class="menu-item" href="index.html">Home</a>
+			<a class="menu-item" href="https://www.google.com">Explore</a>
+			<a class="menu-item" href="https://www.google.com">Item 3</a>
+			<a class="menu-item" href="https://www.google.com">Item 4</a>
+			<!- - <div class = "menu-items"></div> - ->
+		</div> -->
 		
-		<div class="main-site">
+		<div class="wrapper">
 			<div class="banner"></div>
 			<div class="title">Star Seeker</div>
 			<div class="content">
@@ -36,7 +36,7 @@
 		<!-- <div style="height: 5000px;"></div> -->
 		<script src="main.js"></script>
 		<script>
-			const testDiv = document.querySelector('.main-site .banner');
+			const testDiv = document.querySelector('.wrapper .banner');
         	if(!getCookie('homepage-image-url')) {
 				XHR.makeRequest("GET","https://enieg5flfilebgv.m.pipedream.net/images/get?image_id=homepage", function(r,s){
 					testDiv.style.backgroundImage = `url(${r})`;
@@ -48,5 +48,6 @@
 				testDiv.style.animationName = 'fade-in';
 			}
 		</script>
+		<script src="nav-menu.js"></script>
 	</body>
 </html>
