@@ -6,9 +6,9 @@
 			"url": "/"
 		},
 		{
-			"title": "Explore",
-			"url": "/explore/",
-            "icon": "fa-search"
+			"title": "Info",
+			"url": "/info/",
+            "icon": "fa-flask"
 			/*"subpages": [
 				{
 					"title": "Sample Item",
@@ -18,9 +18,9 @@
 			]*/
 		},
 		{
-			"title": "Item 3",
-            "icon": "fa-flask",
-			"url": "/item3/"
+			"title": "Explore",
+            "icon": "fa-search",
+			"url": "/explore/"
 		},
 		{
 			"title": "Item 4",
