@@ -136,6 +136,7 @@ html, body {
 .info-image{
 	width: 100vw;
 	max-height: 250px;
+	object-fit: none;
 }
 .info-left{
 	float: left;
