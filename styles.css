@@ -85,7 +85,7 @@ html, body {
 .banner{
 	width: 100vw;
 	height: calc(100vh - 28px);
-	background-image: url(https://cdn.pocket-lint.com/r/s/1200x/assets/images/142413-apps-feature-art-and-science-collide-the-best-in-modern-space-art-image1-iha6vzu3wk.jpg);
+	background-color: black;
 	background-repeat:none;
 	background-size: 100vw;
 	position: fixed;
