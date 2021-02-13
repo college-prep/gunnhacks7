@@ -36,7 +36,7 @@
             </a>
         </span>
         <a href="/" class="large-screen" style="margin-right:auto">
-            <img id="logo" alt="logo" src="/icons/apple-icon-72x72.png">
+            <img id="logo" alt="logo" src="/icons/android-chrome-96x96.png">
         </a>`;
 	let sidenav = document.createElement("ul");
 	sidenav.classList.add("sidenav");

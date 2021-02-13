@@ -29,6 +29,8 @@ html, body {
 }
 #logo {
 	margin: 0 auto 0 8px;
+	height: 31px;
+	padding: 1px 1px 2px;
 }
 .menu-items { /* deleted */
 	/* float: right; */
