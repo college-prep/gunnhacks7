@@ -6,9 +6,9 @@
 			"url": "/"
 		},
 		{
-			"title": "Events",
-			"url": "/events/",
-            "icon": "fa-flask"
+			"title": "Explore",
+			"url": "/explore/",
+            "icon": "fa-search"
 			/*"subpages": [
 				{
 					"title": "Sample Item",
@@ -18,9 +18,9 @@
 			]*/
 		},
 		{
-			"title": "Explore",
-            "icon": "fa-search",
-			"url": "/explore/"
+			"title": "Register",
+            "icon": "fa-pen",
+			"url": "/register/"
 		}
 	];
 	let topnav = document.createElement("div");
