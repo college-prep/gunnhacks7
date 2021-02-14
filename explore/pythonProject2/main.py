@@ -79,15 +79,17 @@ for inpu in timesInfo1:
 for inpu in locationInfo1:
     locations1.append(str(inpu))
 
+# print('<div class="meteor-card">')
 eclipses = [None] * len(namesInfo1)
 j = 0
 while j < len(namesInfo1):
-    eclipses[j] = ((re.sub(r'\s{2,}', '', names1[j])) + ", " + (re.sub(r'\s{2,}', '', times1[j])) + ", " + (
-        re.sub(r'\s{2,}', '', locations1[j])))
+    eclipses[j] = ('<h3 class="media-heading">Solar Eclipse</h3><span class="shower_acti">' + (re.sub(r'\s{2,}', '', names1[j])) + '</span><p>This eclipse is classified as ' + (re.sub(r'\s{2,}', '', times1[j])) + " and will be visible in the following places: " + (
+        re.sub(r'\s{2,}', '', locations1[j])) + "</p>")
     j = j + 1
 for x in eclipses:
     print(x)
 
+# print("</div>")
 # *****New Website*****
 
 
