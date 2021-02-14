@@ -19,7 +19,7 @@
 		},
 		{
 			"title": "Register",
-            "icon": "fa-pen",
+            "icon": "fa-pencil",
 			"url": "/register/"
 		}
 	];
