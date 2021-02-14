@@ -43,19 +43,19 @@
 				<center><h1>Register</h1></center>
 				<center><p>Register to recieve notifications about future astronomical events.</p></center>
 				<center>
-					<div class="form">
+					<form class="form" action="https://enieg5flfilebgv.m.pipedream.net/contact/add">
 						<div class="text-fields">
 							<input type="text" name="name" class="text-input" placeholder="Name (Optional)"/>
-							<input type="text" name="email_address" class="text-input" placeholder="Phone Number"/>
+							<input type="tel" name="phone_number" class="text-input" placeholder="Phone Number" pattern="^(\+\d{1,2}\s?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$"/>
 						</div>
 						<input type="submit" id = "submit" class="submit button" value="Submit"/>
-					</div>
+					</form>
 				</center>
 			</div>
 		</div>
 		<script src="/main.js"></script>
 		<script>
-			const testDiv = document.querySelector('.wrapper .banner');
+			/*const testDiv = document.querySelector('.wrapper .banner');
         	if(!getCookie('homepage-image-url')) {
 				XHR.makeRequest("GET","https://enieg5flfilebgv.m.pipedream.net/images/get?image_id=homepage", function(r,s){
 					testDiv.style.backgroundImage = `url(${r})`;
@@ -65,7 +65,7 @@
 			} else {
 				testDiv.style.backgroundImage = `url(${getCookie('homepage-image-url')})`;
 				testDiv.style.animationName = 'fade-in';
-			}
+			}*/
 		</script>
 		<script src="/nav-menu.js"></script>
 	</body>
